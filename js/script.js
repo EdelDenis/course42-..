@@ -7,10 +7,10 @@ const hearts = document.querySelectorAll(".heart"); // - найти єлемен
 const oneHeart = document.querySelector(".heart"); // - найти єлемент по селектору (всегда віводится первій)
 const wrapper = document.querySelector(".wrapper");
 
-//box.style.backgroundColor = "blue";
+//box.style.backgroundColor = "blue"; - добавить к выбранному элементу стайл 
 //box.style.width = "500px";
 
-box.style.cssText = "background-color: blue; width:500px";
+box.style.cssText = "background-color: blue; width:500px"; // - напрямую забивать в инлайн стили
 
 btns[1].style.borderRadius = "100%";
 circles[0].style.backgroundColor = "red";
@@ -21,7 +21,7 @@ circles[0].style.backgroundColor = "red";
 
 hearts.forEach(item =>{
     item.style.backgroundColor = "blue";
-}); /* переборка псевдомассива */
+}); /* переборка псевдомассива - ДОБАВЛЯЕТ К КАЖДОМУ ЭЛЕМЕНТУ ПСЕВДОМАССИВА НАПИСАННЫЙ ВНУТРИ ФУНКЦИИ ЦСС КОД */
 
 const div = document.createElement("div"); // - создали переменную с каким то дивом 
 //const text = document.createTextNode("Тут был я");
@@ -30,7 +30,7 @@ div.classList.add("black"); // - добавили к диву класс из ц
 
 //wrapper.append(div); // - добавить К враперу(класс с сердечками) див в КОНЕЦ (посл во врапере)
 
-// wrapper.prepend(div); // - добавить К враперу див в НАЧАЛО (перед врапером)
+// wrapper.prepend(div); // - добавить К враперу див в НАЧАЛО (первый во врапере)
 
 // hearts[0].before(div) // - добавить див ПЕРЕД выбраным элементом (хартс 0);
 
